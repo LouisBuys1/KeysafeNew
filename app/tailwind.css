@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  @apply bg-brand-purple text-brand-text; /* Use brand purple as default bg */
+  height: 100%; /* Ensure body takes full height */
+}
+
+/* Force dark mode interpretation if needed, though Tailwind handles it with class strategy */
+html {
+  color-scheme: dark;
+}
+
+/* Custom component styles can go here if needed */
+.key-slot {
+  /* Example placeholder for key slot specific styles */
+  @apply aspect-square rounded-lg flex items-center justify-center transition-all duration-200;
+}
